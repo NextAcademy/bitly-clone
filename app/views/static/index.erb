@@ -10,6 +10,12 @@
   <input type ="submit" value="Submit">
 </form>
 
+Errors:
+
+<% if Url.new.errors %>
+  <%= @url.errors.messages if @url %>
+<% end %>
+
 <p>Hooray</p>
 
 
