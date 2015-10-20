@@ -12,6 +12,7 @@ require 'pathname'
 require 'pg'
 require 'active_record'
 require 'logger'
+require 'byebug'
 
 	# sinatra
 require 'sinatra'

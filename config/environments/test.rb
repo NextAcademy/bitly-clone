@@ -1,9 +1,10 @@
-# Include the general initialization 
+# Include the general initialization
 require File.expand_path("../init", __FILE__)
 
 # Requiring the necessary gem for testing
 require 'rspec'
 require 'rack/test'
+
 
 # Creating constant pathname
 APP_TEST_CONFIG = File.join(APP_ROOT, "config", "environments", "test")
