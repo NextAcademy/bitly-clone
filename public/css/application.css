@@ -1,0 +1,79 @@
+h1 {
+    padding:50px;
+    margin:20px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: orange;
+    font-size: 5em;
+}
+
+#datatable {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.b01 {
+    color: solid gray;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+  }
+
+.redfont {
+    color: red;
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+/*    border:3px solid #8AC007;*/
+    padding: 10px;
+}
+
+th {
+    height: 20px;
+    text-align: left;
+    background-color: green;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+td {
+    height:15px;
+    padding:5px;
+    text-align: left;
+    vertical-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+td:last-child{
+    text-align: center;
+}
+
+#input {
+    padding:10px;
+    border:2px
+    solid #ccc;
+    border-radius: 5px;
+}
+
+#submitbutton {
+    padding:10px;
+    background:orange;
+    border:0 none;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 11pt;
+    color:gray;
+}
+
+

@@ -1,33 +1,39 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<h1 style="text-align:centre">URLs Made Short</h1>
 
-<p>Shorten your URL here!</p>
-
-<form action="/urls" method="post">
-  Enter URL:
+<div class="banner b01 center">
+  <p>Enter your URL here to get started!</p>
+  <form action="/urls" method="post">
   <!-- <input type ="text" name="url[long]"> -->
-  <input type ="text" name="long_url">
-  <input type ="submit" value="Submit">
+  <input id = "input" type ="text" name="long_url" placeholder="Paste your link here" size="50">
+  <input id = "submitbutton" type ="submit" value="Submit">
 </form>
+</div>
 
+<div class="error redfont center">
+  <% if @failed %>
+  Error:
+  Please input a valid URL.
+  <% end %>
+</div>
 
-<% if Url.new.errors %>
-Errors:
-  <%= @url.errors.messages if @url %>
-Please input a valid URL.
-<% end %>
-
-<p>Hooray</p>
-
-
-<!-- <table> -->
+<div>
+<br>
+<table id="datatable">
+  <tr>
+    <th><%= "Long URL"%></th>
+    <th><%= "Shorten URL"%></th>
+    <th><%= "Click_count"%></th>
+  </tr>
+  <tr>
   <% @urls.each do |url| %>
-    <%= url.long_url %>
-    <%= url.shorten_url %><br>
-<!--     <tr>
-      <td><%= url.long_url %></td>
+    <td><%= url.long_url %></td>
+    <td><%= url.shorten_url %></td>
+    <td><%= url.click_count%></td>
+  </tr>
+<!--       <td><%= url.long_url %></td>
       <td><a href="<%=url.long_url%>"><%= url.shorten_url %></a></td>
     </tr> -->
   <% end %>
-<!-- </table> -->
+</table>
+</div>
 

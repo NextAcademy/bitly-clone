@@ -4,12 +4,12 @@ post '/urls' do #create a new URL
 # byebug
  # Url.create(long_url: params[:url][:long])
  @url = Url.new(long_url: params[:long_url])
-
 # byebug
   if @url.save
     redirect '/'
   else
     @urls = Url.all
+    @failed = true
 
     erb :'static/index'
     # redirect "", url.errors: "INVALID"
@@ -17,6 +17,10 @@ post '/urls' do #create a new URL
 
 # byebug
 
+end
+
+get '/urls' do
+  redirect '/'
 end
 
 get '/:short_url' do #redirect to appropriate "long" URL

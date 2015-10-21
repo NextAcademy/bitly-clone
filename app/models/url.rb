@@ -3,9 +3,9 @@ require 'byebug'
 class Url < ActiveRecord::Base
   before_create :shorten
 
-  # validates :long_url, presence: true, :format => {:with => URI.regexp}
+  validates :long_url, presence: true, :format => {:with => URI.regexp}
 
-  validates :long_url, presence: true, :format => {:with => /https?:\/\/[\S]+/, :message => "POP: Invalid URL"} # attr_accessor :click_count  #never use this!!!
+  # validates :long_url, presence: true, :format => {:with => /https?:\/\/[\S]+/}#:message => "POP: Invalid URL"} attr_accessor :click_count  #never use this!!!
 
   def shorten
     alpha = ("A".."Z").to_a.sample(5)
