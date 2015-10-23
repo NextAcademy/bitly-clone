@@ -1,2 +1,20 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+ <form id="search_form" action="/urls" method="post">
+ 	Enter URL:
+ 	<input type="text" name="long_url">
+ 	<input type="submit" value="Submit">
+ </form> 
+ <hr>
+
+<table>
+<tr>
+			<th>Short links</th>
+			<th>Long links</th>
+</tr>
+<tr>
+ <tr><% @urls.each do |url| %></tr>
+	<td><a href="https://www.youtube.com/watch?v=JwzxH-VzQSs">
+	 	<p><%= url.short_url %> <span>| count: <%= url.click_count %></span></p></a></td>
+ 	<td><p><%= url.long_url %></p></td>
+ <% end %>
+</tr>
+</table>
