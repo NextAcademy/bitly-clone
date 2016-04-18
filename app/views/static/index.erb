@@ -1,7 +1,15 @@
 <h1>Welcome to Sinatra!</h1>
-<p>See Me in views/static/index.html.erb</p>
+<p>Hello, world!</p>
 
-<h2>File Description File Location</h2> 
-<p>This view /app/views/index.erb</p>
-<p>This layout file</p>
-<p>The current controller</p>
+<h2>We are here to help!</h2>
+<form action="/urls" method="post">
+	Enter URL:
+	<input type ="text" name ="long_url" placeholder="Insert URL here">
+	<input type="submit" value="Shorten!">
+</form>
+
+<% if @url %>
+
+	<a href = <%= @url.short %> > <%= @url.short %> </a>
+<% end %>
+
