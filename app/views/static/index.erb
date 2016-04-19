@@ -1,15 +1,30 @@
-<h1>Welcome to Sinatra!</h1>
-<p>Hello, world!</p>
 
-<h2>We are here to help!</h2>
+<header>
+
+<a href="http://localhost:9393/">
+<img src="http://apk-dl.com/detail/image/com.jjapp.spacedogeadventure-w250.png" alt="Doge Icon" style="width:80px;height:80px;">
+</a>
+
+<h1>Welcome to DogeBit</h1>
+
+</header>
+
+<h2> Your friendly Doge to make 'UR L'ife simpler </h2>
+
+<nav>
+
 <form action="/urls" method="post">
-	Enter URL:
-	<input type ="text" name ="long_url" placeholder="Insert URL here">
-	<input type="submit" value="Shorten!">
+	<input type ="text" name ="long_url" placeholder="URL" id="changeinputbox">
+	<input type="submit" value="Shorten!" id="addfont">
 </form>
 
-<% if @url %>
+</nav>
 
-	<a href = <%= @url.short %> > <%= @url.short %> </a>
+<foot>
+
+<% if @url %>
+	<p>Your long URL:<%=@url.long %> </p>
+	<p>Your short URL:<a href =<%= @url.short %> target="_blank" > http://localhost:9393/<%= @url.short %></a> </p>
 <% end %>
 
+</foot>
