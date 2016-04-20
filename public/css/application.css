@@ -4,16 +4,35 @@ a:visited {color:gold; background-color:transparent; text-decoration:none}
 a:hover   {color:cyan; background-color:transparent; text-decoration:underline}
 a:active  {color:purple; background-color:transparent; text-decoration:underline}
 
+a {
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-family: 'Brain Flower';
+    src: url("/font/brain_flower/brain_flower_ero.ttf");
+    font-size: 25;
+    background-color: transparent;
+    color: white;
+}
+
 body {
    background-image: url("https://drscdn.500px.org/photo/135669467/q%3D80_m%3D2000/5148054fe22b7f4a330db922273ae775") ;
    padding: 0px;
    margin: 0px;
    margin-top: 120;
+   background-attachment: fixed;
+   background-size: cover;
 }
 
-a {
+
+form {
     color: white;
+    text-decoration: underline;
+
 }
+
 
 header {
     background-color: transparent;
@@ -21,6 +40,7 @@ header {
     color:white;
     padding:1px; 
 }
+
 nav {
     line-height:50px;
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -31,6 +51,7 @@ nav {
     margin: 0 auto; 
     width:250px; 
 }
+
 
 section {
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -90,31 +111,31 @@ input#changeinputbox {
     background-repeat: no-repeat;
     padding-left: 40px;
 }
-    
 
+input#changesizeforlist {
+    font-family: 'Stereofidelic';
+    font-size: 30;
+    margin-left: 1200;
+    position: absolute;
+    margin-top: -565;
+}
+    
 input#changfont {
     font-family: 'Brain Flower';
     font-size: 30;
     src: url("/font/brain_flower/brain_flower_ero.ttf");
 }
 
-form {
-    color: white;
-    text-decoration: underline;
-
-}
 
 input#addfont {
     font-family: 'Stereofidelic';
     font-size: 20;
 }
 
-p {
-    text-align: center;
-    font-family: 'Brain Flower';
-    src: url("/font/brain_flower/brain_flower_ero.ttf");
-    font-size: 25;
-    background-color: transparent;
+th {
     color: white;
+    font-family: 'Brain Flower';
+    font-size: 25;
 }
+
 </style>

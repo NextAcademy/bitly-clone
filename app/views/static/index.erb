@@ -22,6 +22,10 @@
 
 <foot>
 
+<form action="http://localhost:9393/list" >
+    <input type="submit" value="List!" id="changesizeforlist">
+</form>
+
 <% if @url %>
 	<p>Your long URL:<%=@url.long %> </p>
 	<p>Your short URL:<a href =<%= @url.short %> target="_blank" > http://localhost:9393/<%= @url.short %></a> </p>

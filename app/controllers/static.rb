@@ -6,18 +6,29 @@ end
 
 post '/urls' do
   url1 = Url.shorten
-  @url2 = Url.new(long: params[:long_url], short: url1)
-  if @url2.save == true
-  @url = Url.create(long: params[:long_url], short: url1)
+  @url = Url.new(long: params[:long_url], short: url1)
+  if @url.save == true
+  	@url
   erb :"static/index" 
   else
-  	redirect 'error'
+  	redirect '/error'
   end
 end
 
 get '/error' do
 	@url
 	erb :"static/index2"
+end
+
+get '/list' do
+	@uri = Url.all.sort_by {|x| x[:created_at]}.reverse
+	erb :"static/index3"
+end
+
+get '/delete/:short_url' do
+	a = Url.find_by(short: params[:short_url])
+	a.destroy
+	redirect '/list'
 end
 
 get '/:short_url' do
