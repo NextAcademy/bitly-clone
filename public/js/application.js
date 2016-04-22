@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('h1').hide().fadeIn(3000);
-    $('table').hide();
+    $('.index_table').hide();
 
     $('input').focus(function(){
     	$(this).css('outline-color', 'white');
@@ -11,8 +11,9 @@ $(document).ready(function(){
     });
 
     $('button').click(function(){
-    	$('table').fadeIn(1000).slideDown(1000);
+    	$('.index_table').show("fold", 1000);
     });
+
 
     $('button').dblclick(function(){
     	window.location.href = "http://localhost:9393/list";

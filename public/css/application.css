@@ -1,5 +1,13 @@
-<style>
-header{}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    padding: 25px;
+}
+
 h1 {
     font-family: 'bakery';
     color:white;
@@ -128,14 +136,27 @@ section {
 }
 
 #footer {
-   position:fixed;
+   position:absolute;
    bottom:0;
    width:100%;
    height:60px;   /* Height of the footer */
    background:transparent;
    margin-left: 10;
-   margin-bottom: -20
+   margin-bottom: -20;
+   left:0;
+
 }
+
+footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
+
 
 input#changesizeforlist {
     font-family: 'Stereofidelic';
@@ -163,4 +184,4 @@ td{
     text-align: center;
 }
 
-</style>
+
