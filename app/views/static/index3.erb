@@ -1,28 +1,29 @@
-
-<header>
+<header style="margin-top: -100px; margin-bottom: 60;">
 <a href="http://localhost:9393/">
 <img src="http://apk-dl.com/detail/image/com.jjapp.spacedogeadventure-w250.png" alt="Doge Icon" style="width:80px;height:80px;">
 </a>
-<h1>DogeBit</h1>
 </header>
 
-<table border="1" style="width:100%">
+<h1>DogeBit</h1>
+
+
+<article>
+<table border="1" style="width:100%;" id="magictable" >
   <tr>
     <th>Long URL</th> 
     <th>Shortened URL</th>
     <th>Number of times Visited</th>
-    <th>DELETE</th>
   </tr>
   <% if @uri %>
   <% @uri.each do |x| %>
   	<tr>
-    	<td><a href="/<%=x.long %>" target="_blank"><%=x.long%></a></td>
+    	<td><a href="<%=x.long %>" target="_blank"><%=x.long%></a></td>
     	<td><a href="/<%=x.short %>" target="_blank">http://localhost:9393/<%=x.short%></a></td> 
-    	<td><a href="/<%=x.counter %>"><%=x.counter%></a></td>
-    	<td><a href="delete/<%=x.short %>">Delete</a></td>
+    	<td><%=x.counter%></td>
     </tr>
   <% end %>
 </table>
+</article>
 
 <% end %>
 

@@ -1,34 +1,50 @@
-
-<header>
-
+<header style="margin-top: -100px; margin-bottom: 60;">
 <a href="http://localhost:9393/">
-<img src="http://apk-dl.com/detail/image/com.jjapp.spacedogeadventure-w250.png" alt="Doge Icon" style="width:80px;height:80px;">
+<img src="http://apk-dl.com/detail/image/com.jjapp.spacedogeadventure-w250.png" alt="Doge Icon" style="width:80px;height:80px; margin-left: 20">
 </a>
-
-<h1>Welcome to DogeBit</h1>
-
 </header>
 
+<h1>Welcome to DogeBit</h1>
 <h2> Your friendly Doge to make 'UR L'ife simpler </h2>
 
-<nav>
 
 <form action="/urls" method="post">
 	<input type ="text" name ="long_url" placeholder="URL" id="changeinputbox">
 	<input type="submit" value="Shorten!" id="addfont">
 </form>
 
-</nav>
 
-<foot>
-
-<form action="http://localhost:9393/list" >
-    <input type="submit" value="List!" id="changesizeforlist">
-</form>
+<section>
 
 <% if @url %>
-	<p>Your long URL:<%=@url.long %> </p>
+	<p>Your long URL: <%=@url.long %> </p>
 	<p>Your short URL:<a href =<%= @url.short %> target="_blank" > http://localhost:9393/<%= @url.short %></a> </p>
+<% elsif @urll == true %>
+	<p>Invalid Link!</p>
 <% end %>
 
-</foot>
+</section>
+
+<article>
+<button>
+  List!
+</button>
+<table border="1" style="width:100%">
+  <tr>
+    <th>Long URL</th> 
+    <th>Shortened URL</th>
+    <th>Number of times Visited</th>
+  </tr>
+  <% @uri[0..2].each do |x| %>
+  	<tr>
+    	<td><a href="<%=x.long %>" target="_blank"><%=x.long%></a></td>
+    	<td>http://localhost:9393/<%=x.short%></td> 
+    	<td><%=x.counter%></td>
+    </tr>
+  <% end %>
+</table>
+</article>
+
+<div id="footer">
+<img src="http://fleeps.com/templates/__custom/images/fleeps/fleepsfans.png" alt="fitp" style="width:150px;"> 
+</div>

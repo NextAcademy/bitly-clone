@@ -1,5 +1,55 @@
 <style>
-a:link    {color: black; background-color:transparent; text-decoration:none}
+header{}
+h1 {
+    font-family: 'bakery';
+    color:white;
+    text-align: center;
+    font-size: 90;
+    margin:10;
+}
+
+h2 {
+    font-family: 'Brain Flower';
+    color:white;
+    font-size: 30;
+    text-align: center
+    }
+
+
+form {
+    color: white;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 70px;
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    border-color: transparent;
+    font-size: 15;
+
+    }
+
+article{
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    border-color: white;
+    font-family: Stereofidelic;
+    color: white;
+    font-size: 30;
+    margin-top: 5;
+    border:none;
+
+}
+
+
+a:link    {color: chocolate; background-color:transparent; text-decoration:none}
 a:visited {color:gold; background-color:transparent; text-decoration:none}
 a:hover   {color:cyan; background-color:transparent; text-decoration:underline}
 a:active  {color:purple; background-color:transparent; text-decoration:underline}
@@ -18,7 +68,7 @@ p {
 }
 
 body {
-   background-image: url("https://drscdn.500px.org/photo/135669467/q%3D80_m%3D2000/5148054fe22b7f4a330db922273ae775") ;
+   background-image:  url("/img/e.jpeg");
    padding: 0px;
    margin: 0px;
    margin-top: 120;
@@ -26,77 +76,26 @@ body {
    background-size: cover;
 }
 
-
-form {
-    color: white;
-    text-decoration: underline;
-
+table{
+    margin-top:10;
 }
 
-
-header {
-    background-color: transparent;
-    text-align: center;
-    color:white;
-    padding:1px; 
+.magictable{
+    display: block;
 }
 
 nav {
     line-height:50px;
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     color:white;
-    height:100px;
+    height:50px;
     text-align: :center;
     padding:5px;
     margin: 0 auto; 
     width:250px; 
 }
 
-
-section {
-    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    background-color:lightgrey;
-    color:white;
-    height:35px;
-    text-align:center;
-    padding:15px; 
-}
-
-footer {
-    background-color:transparent;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px; 
-}
-
-h1 {
-    font-family: 'bakery';
-    src: url("/font/bakery2/bakery.ttf");
-    color:white;
-    text-align: center;
-    font-size: 60;
-}
-
-h2 {
-    font-family: 'Brain Flower';
-    font-size: 30;
-    src: url("/font/brain_flower/brain_flower_ero.ttf");
-    color:white;
-    text-align: center
-    }
-
-input[type="submit"] {
-    width: 70px;
-    background-color: transparent;
-    color: white;
-    font-family: sans-serif;
-    border-color: transparent;
-    font-size: 15;
-    margin-left: 90;
-    }
-
-input#changeinputbox {
+#changeinputbox {
     width: 250;
     height: 30;
     background-color: transparent;
@@ -111,14 +110,6 @@ input#changeinputbox {
     background-repeat: no-repeat;
     padding-left: 40px;
 }
-
-input#changesizeforlist {
-    font-family: 'Stereofidelic';
-    font-size: 30;
-    margin-left: 1200;
-    position: absolute;
-    margin-top: -565;
-}
     
 input#changfont {
     font-family: 'Brain Flower';
@@ -126,6 +117,33 @@ input#changfont {
     src: url("/font/brain_flower/brain_flower_ero.ttf");
 }
 
+
+
+section {
+     background-color:transparent;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:1px; 
+}
+
+#footer {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:transparent;
+   margin-left: 10;
+   margin-bottom: -20
+}
+
+input#changesizeforlist {
+    font-family: 'Stereofidelic';
+    font-size: 30;
+    margin-left: 90;
+    position: absolute;
+    margin-top: 10;
+}
 
 input#addfont {
     font-family: 'Stereofidelic';
@@ -136,6 +154,13 @@ th {
     color: white;
     font-family: 'Brain Flower';
     font-size: 25;
+}
+
+td{
+    color: white;
+    font-family: 'Brain Flower';
+    font-size: 20;
+    text-align: center;
 }
 
 </style>
