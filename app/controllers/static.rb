@@ -1,9 +1,8 @@
 
 
 get '/' do
-  @uri = Url.all.order(created_at: :desc).limit(10)
+  @uri = Url.all.order(updated_at: :asc).limit(10)
   erb :"static/index"
-
 end
 
 post '/urls' do
@@ -18,10 +17,10 @@ post '/urls' do
   	else
   		params[:long_url] = "http://" + params[:long_url]
   end
-    @uri = Url.all.order(created_at: :desc).limit(10)
-  	@url = Url.new(long: params[:long_url])
-    @url.save
-  	if @url.save == true
+    
+  	@url = Url.create(long: params[:long_url])
+  	if @url.save 
+
   		 @url
   	erb :"static/index" 
   	else
@@ -30,10 +29,11 @@ post '/urls' do
   	erb :"static/index"
   	end
 
+@uri = Url.all.order(updated_at: :asc).limit(10)
 end
 
 get '/list' do
-	@uri = Url.all.order(created_at: :desc).limit(10)
+	@uri = Url.all.order(updated_at: :asc).limit(10)
 	erb :"static/index3"
 end
 
@@ -48,8 +48,7 @@ get '/:short_url' do
 	b = a.find_by(short: params[:short_url])
 		count = b.counter.to_i
 		count += 1
-		b.counter = count
-		b.save
+		b.update(counter: count, updated_at: DateTime.now)
 	redirect b.long
 end
 
