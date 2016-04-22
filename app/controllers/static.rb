@@ -8,7 +8,7 @@ end
 
 post '/urls' do
 
-url1 = Url.shorten
+# url1 = Url.shorten
 
 	text = params[:long_url]
 	regex = (/\(?(?:(http|https):\/\/)/)
@@ -18,8 +18,10 @@ url1 = Url.shorten
   	else
   		params[:long_url] = "http://" + params[:long_url]
   end
+
   @uri = Url.all.sort_by {|x| x[:created_at]}.reverse
-  	@url = Url.new(long: params[:long_url], short: url1)
+  	@url = Url.new(long: params[:long_url])
+    @url.save
   	if @url.save == true
   		 @url
   	erb :"static/index" 
