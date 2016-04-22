@@ -1,7 +1,7 @@
 
 
 get '/' do
-  @uri = Url.all.sort_by {|x| x[:created_at]}.reverse
+  @uri = Url.all.order(created_at: :desc).limit(10)
   erb :"static/index"
 
 end
@@ -18,8 +18,7 @@ post '/urls' do
   	else
   		params[:long_url] = "http://" + params[:long_url]
   end
-
-  @uri = Url.all.sort_by {|x| x[:created_at]}.reverse
+    @uri = Url.all.order(created_at: :desc).limit(10)
   	@url = Url.new(long: params[:long_url])
     @url.save
   	if @url.save == true
@@ -34,7 +33,7 @@ post '/urls' do
 end
 
 get '/list' do
-	@uri = Url.all.sort_by {|x| x[:created_at]}.reverse
+	@uri = Url.all.order(created_at: :desc).limit(10)
 	erb :"static/index3"
 end
 
