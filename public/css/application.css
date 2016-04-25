@@ -1,0 +1,192 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    padding: 25px;
+}
+
+h1 {
+    font-family: 'bakery';
+    color:white;
+    text-align: center;
+    font-size: 90;
+    margin:10;
+}
+
+h2 {
+    font-family: 'Brain Flower';
+    color:white;
+    font-size: 30;
+    text-align: center
+    }
+
+
+form {
+    color: white;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 70px;
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    border-color: transparent;
+    font-size: 15;
+
+    }
+
+article{
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    border-color: white;
+    font-family: Stereofidelic;
+    color: white;
+    font-size: 30;
+    margin-top: 5;
+    border:none;
+
+}
+
+
+a:link    {color: chocolate; background-color:transparent; text-decoration:none}
+a:visited {color:gold; background-color:transparent; text-decoration:none}
+a:hover   {color:cyan; background-color:transparent; text-decoration:underline}
+a:active  {color:purple; background-color:transparent; text-decoration:underline}
+
+a {
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-family: 'Brain Flower';
+    src: url("/font/brain_flower/brain_flower_ero.ttf");
+    font-size: 25;
+    background-color: transparent;
+    color: white;
+}
+
+body {
+   background-image:  url("/img/e.jpeg");
+   padding: 0px;
+   margin: 0px;
+   margin-top: 120;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+table{
+    margin-top:10;
+}
+
+.magictable{
+    display: block;
+}
+
+nav {
+    line-height:50px;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    color:white;
+    height:50px;
+    text-align: :center;
+    padding:5px;
+    margin: 0 auto; 
+    width:250px; 
+}
+
+#changeinputbox {
+    width: 250;
+    height: 30;
+    background-color: transparent;
+    color: white;
+    border: none; 
+    border-bottom: 1px solid white;
+    font-family: 'Neou';
+    src: url("/font/neou/Neou-Thin.ttf");
+    background-image: url('http://49.media.tumblr.com/1269fd4d28d9fcc99c19c977861f923e/tumblr_mzvvkgBuww1sk3kono1_500.gif');
+    background-size: contain;
+    background-position: 1px 1px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+    
+input#changfont {
+    font-family: 'Brain Flower';
+    font-size: 30;
+    src: url("/font/brain_flower/brain_flower_ero.ttf");
+}
+
+
+
+section {
+     background-color:transparent;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:1px; 
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:transparent;
+   margin-left: 10;
+   margin-bottom: -20;
+   left:0;
+
+}
+
+footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
+
+#answer{
+}
+
+#full_table{
+}
+
+input#changesizeforlist {
+    font-family: 'Stereofidelic';
+    font-size: 30;
+    margin-left: 90;
+    position: absolute;
+    margin-top: 10;
+}
+
+input#addfont {
+    font-family: 'Stereofidelic';
+    font-size: 20;
+}
+
+th {
+    color: white;
+    font-family: 'Brain Flower';
+    font-size: 25;
+}
+
+td{
+    color: white;
+    font-family: 'Brain Flower';
+    font-size: 20;
+    text-align: center;
+}
+
+

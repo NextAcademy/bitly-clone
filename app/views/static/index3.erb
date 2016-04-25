@@ -1,0 +1,36 @@
+<header style="margin-top: -100px; margin-bottom: 60;">
+<a href="http://localhost:9393/">
+<img src="http://apk-dl.com/detail/image/com.jjapp.spacedogeadventure-w250.png" alt="Doge Icon" style="width:80px;height:80px; margin-left: 20">
+</a>
+</header>
+
+<h1>DogeBit</h1>
+
+
+<article>
+<table border='1' style="width:100%;" id="magictable" >
+  <tr>
+    <th>Long URL</th> 
+    <th>Shortened URL</th>
+    <th>Number of times Visited</th>
+  </tr>
+  <% if @uri %>
+  <% @uri.limit(10).each do |x| %>
+  	<tr>
+    	<td><a href="<%=x.long %>" target="_blank"><%=x.long%></a></td>
+    	<td><a href="/<%=x.short %>" target="_blank">http://localhost:9393/<%=x.short%></a></td> 
+    	<td><%=x.counter%></td>
+    </tr>
+  <% end %>
+<% end %>
+</table>
+</article>
+<br>
+<br>
+<br>
+
+<div id="footer">
+<img src="http://fleeps.com/templates/__custom/images/fleeps/fleepsfans.png" alt="fitp" style="width:150px;"> 
+</div>
+
+
