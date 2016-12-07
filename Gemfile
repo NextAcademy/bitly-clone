@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'byebug'
 # Ruby Version
 # ruby "2.2.1"
 

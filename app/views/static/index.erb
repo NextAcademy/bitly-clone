@@ -1,2 +1,16 @@
 <h1>Hello World</h1>
 <p>See Me in views/static/index.html.erb</p>
+
+<form action="/shorten_url" method="post">
+	Enter URL:
+	<input type="text" name="long_url">
+	<input type="submit" value="Submit">
+</form>
+
+<p> <%= @new_url %> </p>
+
+<ul>
+	<% @data.each do |x| %>
+		<li><%= "#{x.id}" + " | " + x.long_url + " | " + x.short_url + " | "%></li>
+	<% end %>
+</ul>
