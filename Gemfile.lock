@@ -51,6 +51,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
+    rui (0.1.2)
+      builder
     shotgun (0.9.1)
       rack (>= 1.0)
     sinatra (1.4.6)
@@ -88,6 +90,7 @@ DEPENDENCIES
   rails_12factor
   rake
   rspec
+  rui
   shotgun
   sinatra
   sinatra-activerecord
