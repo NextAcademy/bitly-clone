@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'byebug'
-gem 'open-uri'
 # Ruby Version
 # ruby "2.2.1"
 

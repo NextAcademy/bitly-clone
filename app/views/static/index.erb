@@ -7,7 +7,7 @@
 	<input type="submit" value="Submit">
 </form>
 
-<p> <%= @new_url %> </p>
+<p><%= @new_url %></p>
 
 <table>
 	<tr>
@@ -19,7 +19,7 @@
 	<tr>
 		<td><%= row.long_url %></td>
 		<td><a href="http://localhost:9393/<%= row.short_url %>">http://localhost:9393/<%= row.short_url %></a></td>
-		<td>CounterValue</td>
+		<td><%= row.counter %></td>
 	</tr>
 	<% end %>
 </table>

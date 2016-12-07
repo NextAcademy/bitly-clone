@@ -1,9 +1,6 @@
-require 'open-uri'
-
 class Url < ActiveRecord::Base
   # This is Sinatra! Remember to create a migration!
-  validates :long_url, presence: true, format: { with: /^(http|https|ftp|ftps):\/\/(([a-z0-9]+\:)?[a-z0-9]+\@)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$/ix }
-
+  validates :long_url, presence: true, format: { with: /^w{3,}\.*[a-z]+\.{1}[a-z]+\.*[a-z]*/, multiline: true}
   before_create :create_alphanumeric, :set_counter
 
   def create_alphanumeric
