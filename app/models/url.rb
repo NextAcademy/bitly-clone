@@ -5,7 +5,7 @@ class Url < ActiveRecord::Base
 before_create :shorten
 
 validates :short_url, uniqueness: { allow_nil: true }
-validates :long_url, presence: true, format: URI::regexp
+validates :long_url, presence: true, format: { with: URI::regexp, message: 'please enter a valid url' }
 
 
 def shorten

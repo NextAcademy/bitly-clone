@@ -1,0 +1,507 @@
+*   [33mcommit 8a17ee68a710f415d06174b63510a43a97adcffa[m
+[31m|[m[32m\[m  Merge: 2a38a54 4b7ac0e
+[31m|[m [32m|[m Author: user <likhimsiow@yahoo.com>
+[31m|[m [32m|[m Date:   Thu Dec 8 17:03:58 2016 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     Merge branch 'master' into feature/user
+[31m|[m [32m|[m     
+[31m|[m *   [33mcommit 4b7ac0e2e0924c638c61c6a11ae5676f93fad6cf[m
+[31m|[m [33m|[m[34m\[m  Merge: e112131 7262dc6
+[31m|[m [33m|[m [34m|[m Author: likhim <likhimsiow@yahoo.com>
+[31m|[m [33m|[m [34m|[m Date:   Thu Dec 8 14:46:04 2016 +0800
+[31m|[m [33m|[m [34m|[m 
+[31m|[m [33m|[m [34m|[m     Merge pull request #1 from likhim/feature/user
+[31m|[m [33m|[m [34m|[m     
+[31m|[m [33m|[m [34m|[m     bitly clone first version
+[31m|[m [33m|[m [34m|[m    
+* [33m|[m [34m|[m [33mcommit 2a38a5437138de711edd45ed988e002b10b19eb9[m
+[34m|[m [33m|[m[34m/[m  Author: user <likhimsiow@yahoo.com>
+[34m|[m[34m/[m[33m|[m   Date:   Thu Dec 8 17:00:40 2016 +0800
+[34m|[m [33m|[m   
+[34m|[m [33m|[m       Added Click Count
+[34m|[m [33m|[m     
+* [33m|[m   [33mcommit 7262dc6474aad09e822fee2f2a1326111a41bc94[m
+[35m|[m[33m\[m [33m\[m  Merge: 4f799d1 e112131
+[35m|[m [33m|[m[33m/[m  Author: user <likhimsiow@yahoo.com>
+[35m|[m [33m|[m   Date:   Thu Dec 8 14:45:34 2016 +0800
+[35m|[m [33m|[m   
+[35m|[m [33m|[m       fixed conflict in static.rb
+[35m|[m [33m|[m   
+[35m|[m * [33mcommit e112131beb4539b8fcfef8de002c69a529a635ae[m
+[35m|[m [36m|[m Author: user <likhimsiow@yahoo.com>
+[35m|[m [36m|[m Date:   Thu Dec 8 14:30:48 2016 +0800
+[35m|[m [36m|[m 
+[35m|[m [36m|[m     Static, index, url done
+[35m|[m [36m|[m   
+* [36m|[m [33mcommit 4f799d1909fc872d884c435056ae472e20ff564d[m
+[36m|[m[36m/[m  Author: user <likhimsiow@yahoo.com>
+[36m|[m   Date:   Thu Dec 8 14:12:10 2016 +0800
+[36m|[m   
+[36m|[m       bitly clone first version
+[36m|[m  
+* [33mcommit 6c02f6fd67369d5233d7390bf5ec8a4cd46f540d[m
+[36m|[m Author: holloway <hollowaykeanho@gmail.com>
+[36m|[m Date:   Tue Dec 22 10:45:30 2015 +0800
+[36m|[m 
+[36m|[m     Gemfile.lock: Updated packages to latest gem
+[36m|[m     
+[36m|[m     Signed-off-by: holloway <hollowaykeanho@gmail.com>
+[36m|[m  
+* [33mcommit 3efd11b757d25f1fc6f9150d4b69f6a3045d481e[m
+[36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m Date:   Thu Nov 5 14:57:06 2015 +0000
+[36m|[m 
+[36m|[m     added printout on Rakefile
+[36m|[m     
+[36m|[m     Signed-off-by: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m  
+* [33mcommit 7a2725416e71a672aea2ec136901d7f6da5a5cad[m
+[36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m Date:   Thu Nov 5 22:56:02 2015 +0800
+[36m|[m 
+[36m|[m     updated README.md to describe cloud-9 support
+[36m|[m  
+* [33mcommit 809705e0089818e6a6bf45d4a263d47136f04988[m
+[36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m Date:   Thu Nov 5 14:48:58 2015 +0000
+[36m|[m 
+[36m|[m     Added support for cloud9 hosting
+[36m|[m     
+[36m|[m     Signed-off-by: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m  
+* [33mcommit c813a19f9fff4d267f0b8827fa8de3696215652c[m
+[36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m Date:   Thu Nov 5 12:02:48 2015 +0800
+[36m|[m 
+[36m|[m     README.md : Updated README.md to meet current version
+[36m|[m  
+* [33mcommit 14e69a28fbaa41c0437602d8c046d131c1a1d0c6[m
+[36m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m Date:   Thu Nov 5 11:56:14 2015 +0800
+[36m|[m 
+[36m|[m     enabled layout for erb in views
+[36m|[m     
+[36m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m  
+* [33mcommit a5437d2f594bc1f25326c73d97ea680a9eb300be[m
+[36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m Date:   Tue Oct 27 15:54:25 2015 +0800
+[36m|[m 
+[36m|[m     README.md: updated version and added new references
+[36m|[m  
+* [33mcommit b7437732b651c230581529d8794ba55b19696ac7[m
+[36m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m Date:   Tue Oct 27 15:42:57 2015 +0800
+[36m|[m 
+[36m|[m     config: environments: init: added public folder for assets hosting
+[36m|[m     
+[36m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[36m|[m    
+*   [33mcommit 3b6601a64ac4aaca2d31e8c98856aeb737aeea35[m
+[1;31m|[m[1;32m\[m  Merge: f423450 2561a8e
+[1;31m|[m [1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;31m|[m [1;32m|[m Date:   Thu Oct 8 10:22:20 2015 +0800
+[1;31m|[m [1;32m|[m 
+[1;31m|[m [1;32m|[m     Merge branch 'master' of github.com:hollowaykeanho/sinatra-web-server
+[1;31m|[m [1;32m|[m   
+[1;31m|[m * [33mcommit 2561a8e3defd37f32437cf8251e691aa056dc3c5[m
+[1;31m|[m [1;32m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;31m|[m [1;32m|[m Date:   Wed Oct 7 16:31:06 2015 +0800
+[1;31m|[m [1;32m|[m 
+[1;31m|[m [1;32m|[m     README.md: updated version number to version 0.0.6
+[1;31m|[m [1;32m|[m     
+[1;31m|[m [1;32m|[m     Applied hotfix for helper configuration.
+[1;31m|[m [1;32m|[m   
+* [1;32m|[m [33mcommit f42345074824abab7a8d33308976184793ebac71[m
+[1;32m|[m[1;32m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m   Date:   Thu Oct 8 09:50:17 2015 +0800
+[1;32m|[m   
+[1;32m|[m       config: environments: init: fixed Issue #16
+[1;32m|[m       
+[1;32m|[m       The session was initialized twice. The latter overridden the secret
+[1;32m|[m       key for the first initialization. This patch is created to remove the
+[1;32m|[m       second initialization.
+[1;32m|[m       
+[1;32m|[m       Source:
+[1;32m|[m       https://github.com/hollowaykeanho/sinatra-web-server/issues/16
+[1;32m|[m       
+[1;32m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit 757e62a490cd5f8b372f1786405549674a05bc36[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Wed Oct 7 16:14:08 2015 +0800
+[1;32m|[m 
+[1;32m|[m     config: environments: init: resolve issue#15 by initialize helpers
+[1;32m|[m     
+[1;32m|[m     The original code does not initialize helpers. Hence, no helper
+[1;32m|[m     code is being required.
+[1;32m|[m     
+[1;32m|[m     This patch is to initialize all helper files inside configuration.
+[1;32m|[m     
+[1;32m|[m     The commit will be released as hotfix.
+[1;32m|[m     
+[1;32m|[m     Source:
+[1;32m|[m     https://github.com/hollowaykeanho/sinatra-web-server/issues/15
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit c08ad840492a73cfc2c2debee185a528fe26fba7[m
+[1;32m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Tue Sep 22 08:55:01 2015 +0800
+[1;32m|[m 
+[1;32m|[m     Updated README for branch diversification
+[1;32m|[m  
+* [33mcommit c17ef943496d98d116c56a00987d48b2c19dbcc7[m
+[1;32m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon Sep 21 18:38:31 2015 +0800
+[1;32m|[m 
+[1;32m|[m     Updated Version for README.md
+[1;32m|[m  
+* [33mcommit 1be1a53d2f4b418928eae5158653de99a39c2b88[m
+[1;32m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon Sep 21 18:20:28 2015 +0800
+[1;32m|[m 
+[1;32m|[m     Update README.md
+[1;32m|[m  
+* [33mcommit 5dd5f33751e68020a4d67492096b1680cd40fd38[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Tue Sep 1 21:36:09 2015 +0800
+[1;32m|[m 
+[1;32m|[m     commented ruby version for compatibility
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit c99c15f9c87b4dacff4c0599802e77c1273a5eab[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Wed Jun 3 23:41:11 2015 +0800
+[1;32m|[m 
+[1;32m|[m     eanbled sessions feature
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit 399d3ca6bc4d959961bcbc6e0a96fe1dce765ab7[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon Jun 1 16:56:30 2015 +0800
+[1;32m|[m 
+[1;32m|[m     updating commit number due to recent changes
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit 6ff2d17b59ebaf5621a52d12f74565dc6fef2956[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon Jun 1 16:55:28 2015 +0800
+[1;32m|[m 
+[1;32m|[m     amended typo for creating 'users' routing instead of 'sessions'
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit 8415856c23d40d106f486f6ad792b7f1d5f983d9[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon May 25 18:58:15 2015 +0800
+[1;32m|[m 
+[1;32m|[m     remove duplicated rack test methods
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit 46a6e895f60356894785542c322b0a51c4ef7692[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon May 25 18:57:31 2015 +0800
+[1;32m|[m 
+[1;32m|[m     shifted rack test methods into spec helper
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit 86f6406745745c49b8991ea2103afc4d6ad6bd65[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon May 25 17:32:03 2015 +0800
+[1;32m|[m 
+[1;32m|[m     Pluralize all path constants
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit a8dcff5cf6caa21d6100192ab5db4d4ea331c3e5[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Mon May 25 07:07:11 2015 +0800
+[1;32m|[m 
+[1;32m|[m     added spec helper into spec folder for cleaner code.
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m  
+* [33mcommit d6f6252105824548be81da18626b60b87c6406ce[m
+[1;32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m Date:   Thu May 21 02:55:01 2015 +0800
+[1;32m|[m 
+[1;32m|[m     rename framework to skeleton
+[1;32m|[m     
+[1;32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;32m|[m    
+*   [33mcommit f298cf242eff630d02c58324f5248b3f37c276a2[m
+[1;33m|[m[1;34m\[m  Merge: dd7797f a7f2132
+[1;33m|[m [1;34m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m Date:   Thu May 21 02:34:17 2015 +0800
+[1;33m|[m [1;34m|[m 
+[1;33m|[m [1;34m|[m     Merge pull request #13 from hollowaykeanho/dev/readme
+[1;33m|[m [1;34m|[m     
+[1;33m|[m [1;34m|[m     created README file for this repo
+[1;33m|[m [1;34m|[m   
+[1;33m|[m * [33mcommit a7f2132517fa728dbdc5dd2519de45c7ab3ba6c9[m
+[1;33m|[m[1;33m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m   Date:   Thu May 21 02:32:02 2015 +0800
+[1;33m|[m   
+[1;33m|[m       created README file for this repo
+[1;33m|[m       
+[1;33m|[m       format: Markdown
+[1;33m|[m       
+[1;33m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m    
+*   [33mcommit dd7797f672892ed9812277bec33cf62d93ba8719[m
+[1;35m|[m[1;36m\[m  Merge: 5623aa5 926d0bf
+[1;35m|[m [1;36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m [1;36m|[m Date:   Thu May 21 00:20:59 2015 +0800
+[1;35m|[m [1;36m|[m 
+[1;35m|[m [1;36m|[m     Merge pull request #12 from hollowaykeanho/dev/seed
+[1;35m|[m [1;36m|[m     
+[1;35m|[m [1;36m|[m     Dev/seed
+[1;35m|[m [1;36m|[m   
+[1;35m|[m * [33mcommit 926d0bfa88ca3dd627f4eee563da9f0d8c1aa602[m
+[1;35m|[m [1;36m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m [1;36m|[m Date:   Thu May 21 00:18:59 2015 +0800
+[1;35m|[m [1;36m|[m 
+[1;35m|[m [1;36m|[m     added db:seed and db:version into Rakefile
+[1;35m|[m [1;36m|[m     
+[1;35m|[m [1;36m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m [1;36m|[m   
+[1;35m|[m * [33mcommit c70dd179231a2df5961364a68263f9b2a0b435a8[m
+[1;35m|[m[1;35m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m   Date:   Thu May 21 00:18:25 2015 +0800
+[1;35m|[m   
+[1;35m|[m       added seed file for database
+[1;35m|[m       
+[1;35m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m    
+*   [33mcommit 5623aa571e413f21d90a754677db4dcd12d6c5b2[m
+[31m|[m[32m\[m  Merge: 1912c0b 9abd309
+[31m|[m [32m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Thu May 21 00:08:56 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     Merge pull request #11 from hollowaykeanho/dev/heroku
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Supporting Heroku deployment
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit 9abd30939586d228e3d365761c50efbf385a7251[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Thu May 21 00:05:43 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     added procfile for heroku deployment
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     This is aligned to:
+[31m|[m [32m|[m     https://devcenter.heroku.com/articles/getting-started-with-ruby-o
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit 194f83cfaaa6f642bdc9571d67283e4e8ffa46e6[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Thu May 21 00:04:52 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     added environment detection for setting up database
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit 0c6934e13daf5d97ddc2127ff2dd15aee31b6595[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Thu May 21 00:03:09 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     added config/puma.rb for configuring puma web server
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     This is applied according to:
+[31m|[m [32m|[m     https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit c49f511a51dcda63c48adb2445e3efe4b322e893[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Thu May 21 00:02:34 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     Generated Gemfile.lock based on latest Gemfile settings
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit ea8e59e26cb35960189b1f148744632982685c01[m
+[31m|[m[31m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m   Date:   Wed May 20 23:59:07 2015 +0800
+[31m|[m   
+[31m|[m       added and recategorized gem into default, development and test group
+[31m|[m       
+[31m|[m       rspec gem was moved to default group
+[31m|[m       rails_12factor gem and puma gem were added to production group
+[31m|[m       shotgun gem was moved to development and test group
+[31m|[m       
+[31m|[m       All these changes are designed to fulfill Heroku production requirement.
+[31m|[m       
+[31m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m    
+*   [33mcommit 1912c0b73bf0219a4d196efe4ebe92914b00c9cf[m
+[33m|[m[34m\[m  Merge: 73796b2 ed6d54c
+[33m|[m [34m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[33m|[m [34m|[m Date:   Wed May 20 22:43:28 2015 +0800
+[33m|[m [34m|[m 
+[33m|[m [34m|[m     Merge pull request #10 from hollowaykeanho/dev/public
+[33m|[m [34m|[m     
+[33m|[m [34m|[m     added asset hosting folders
+[33m|[m [34m|[m   
+[33m|[m * [33mcommit ed6d54cdb2fcbe8834b703f1cbc5465f9c4d0b1e[m
+[33m|[m[33m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[33m|[m   Date:   Wed May 20 22:42:31 2015 +0800
+[33m|[m   
+[33m|[m       added asset hosting folders
+[33m|[m       
+[33m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[33m|[m  
+* [33mcommit 73796b2487bb1dd66ce14b94fbaef113d629f6e6[m
+[34m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[34m|[m Date:   Wed May 20 22:31:02 2015 +0800
+[34m|[m 
+[34m|[m     added .gitignore to ignore temporary files
+[34m|[m     
+[34m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[34m|[m    
+*   [33mcommit 767b5e84f7ce9fc6cd2e2162d1788e40d3c0098e[m
+[35m|[m[36m\[m  Merge: ea31353 ea2467b
+[35m|[m [36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[35m|[m [36m|[m Date:   Wed May 20 22:24:33 2015 +0800
+[35m|[m [36m|[m 
+[35m|[m [36m|[m     Merge pull request #9 from hollowaykeanho/dev/server
+[35m|[m [36m|[m     
+[35m|[m [36m|[m     added 'rake server' instruction into Rakefile
+[35m|[m [36m|[m   
+[35m|[m * [33mcommit ea2467b0bfe5edf0a93b57ee63f8f9129dae3ae5[m
+[35m|[m[35m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[35m|[m   Date:   Wed May 20 22:23:25 2015 +0800
+[35m|[m   
+[35m|[m       added 'rake server' instruction into Rakefile
+[35m|[m       
+[35m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[35m|[m    
+*   [33mcommit ea313534d89c122d7c20abe2a26314821f3d0f2a[m
+[1;31m|[m[1;32m\[m  Merge: 4f9c8a4 2de5069
+[1;31m|[m [1;32m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;31m|[m [1;32m|[m Date:   Wed May 20 22:10:34 2015 +0800
+[1;31m|[m [1;32m|[m 
+[1;31m|[m [1;32m|[m     Merge pull request #8 from hollowaykeanho/dev/helper
+[1;31m|[m [1;32m|[m     
+[1;31m|[m [1;32m|[m     created helper folder with its Mashdown readme
+[1;31m|[m [1;32m|[m   
+[1;31m|[m * [33mcommit 2de5069ff64307272325b4cfbce3163dbeefe3ae[m
+[1;31m|[m[1;31m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;31m|[m   Date:   Wed May 20 22:08:07 2015 +0800
+[1;31m|[m   
+[1;31m|[m       created helper folder with its Mashdown readme
+[1;31m|[m       
+[1;31m|[m       The readme describes how to use helpers.
+[1;31m|[m       
+[1;31m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;31m|[m    
+*   [33mcommit 4f9c8a489af9b5f38205a76e879c73aa9f522005[m
+[1;33m|[m[1;34m\[m  Merge: 2d5e984 8c36b7a
+[1;33m|[m [1;34m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m Date:   Wed May 20 21:34:39 2015 +0800
+[1;33m|[m [1;34m|[m 
+[1;33m|[m [1;34m|[m     Merge pull request #7 from hollowaykeanho/dev/MVC_touchup
+[1;33m|[m [1;34m|[m     
+[1;33m|[m [1;34m|[m     Dev/mvc touchup
+[1;33m|[m [1;34m|[m   
+[1;33m|[m * [33mcommit 8c36b7a14b7be347897c46ba819a4aadbaf47991[m
+[1;33m|[m [1;34m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m Date:   Wed May 20 21:32:27 2015 +0800
+[1;33m|[m [1;34m|[m 
+[1;33m|[m [1;34m|[m     added app_file settings into environment init configuration
+[1;33m|[m [1;34m|[m     
+[1;33m|[m [1;34m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m   
+[1;33m|[m * [33mcommit 12dd3e1e35d49d5abaa272600f1360365c3a72fb[m
+[1;33m|[m [1;34m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m Date:   Wed May 20 21:16:05 2015 +0800
+[1;33m|[m [1;34m|[m 
+[1;33m|[m [1;34m|[m     added Mashdown readme into app/views folder
+[1;33m|[m [1;34m|[m     
+[1;33m|[m [1;34m|[m     This readme describes how to use app/views folder
+[1;33m|[m [1;34m|[m     
+[1;33m|[m [1;34m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m   
+[1;33m|[m * [33mcommit fa8aaafa0512fc2bda25c33d316ac9f97b5d12f6[m
+[1;33m|[m [1;34m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m Date:   Wed May 20 20:59:07 2015 +0800
+[1;33m|[m [1;34m|[m 
+[1;33m|[m [1;34m|[m     Added Mashdown readme into app/models
+[1;33m|[m [1;34m|[m     
+[1;33m|[m [1;34m|[m     This readme describes how to use app/models.
+[1;33m|[m [1;34m|[m     
+[1;33m|[m [1;34m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m [1;34m|[m   
+[1;33m|[m * [33mcommit a111bc741a52af7a99ac0cc08400a7f2751c780b[m
+[1;33m|[m[1;33m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m   Date:   Wed May 20 20:49:11 2015 +0800
+[1;33m|[m   
+[1;33m|[m       added Mashdown readme into app/controllers
+[1;33m|[m       
+[1;33m|[m       This readme describes the app/controllers
+[1;33m|[m       
+[1;33m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;33m|[m    
+*   [33mcommit 2d5e9841548458d292e2cd1bdf20dd3275ff3b78[m
+[1;35m|[m[1;36m\[m  Merge: 41a9d2e 4e48bbf
+[1;35m|[m [1;36m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m [1;36m|[m Date:   Wed May 20 20:25:35 2015 +0800
+[1;35m|[m [1;36m|[m 
+[1;35m|[m [1;36m|[m     Merge pull request #6 from hollowaykeanho/dev/sessions
+[1;35m|[m [1;36m|[m     
+[1;35m|[m [1;36m|[m     added sessions supports into environment init configuration.
+[1;35m|[m [1;36m|[m   
+[1;35m|[m * [33mcommit 4e48bbf6f7274b72e9888a084dbc2828551c09e9[m
+[1;35m|[m[1;35m/[m  Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m   Date:   Wed May 20 20:24:32 2015 +0800
+[1;35m|[m   
+[1;35m|[m       added sessions supports into environment init configuration.
+[1;35m|[m       
+[1;35m|[m       Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[1;35m|[m    
+*   [33mcommit 41a9d2ec19e7ce9f0ae11047ba3e1a86f89c4ee7[m
+[31m|[m[32m\[m  Merge: 37ccde1 5f3138e
+[31m|[m [32m|[m Author: Holloway Chew Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Wed May 20 19:55:05 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     Merge pull request #5 from hollowaykeanho/dev/database
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Dev/database
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit 5f3138e9a2dfded4d337d24b63291eca9077d099[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Wed May 20 19:51:17 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     added generate:model instruction into Rakefile
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit a79ab02e2be03e723bbe1051875a3a93877deccc[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Wed May 20 19:30:16 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     re-categorized default printout in Rakefile
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit 31abe32795493d3538d9bb18edb917f56525bc39[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Wed May 20 19:23:19 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     added generate:migration instruction to Rakefile
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m   
+[31m|[m * [33mcommit 4bf5dd66ec6bbb824dcf93f6541f0ff6674c6797[m
+[31m|[m [32m|[m Author: Holloway, Kean Ho <hollowaykeanho@gmail.com>
+[31m|[m [32m|[m Date:   Wed May 20 19:14:01 2015 +0800
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     added db:create, db:migrate and db:drop for Rakefile
+[31m|[m [32m|[m     
+[31m|[m [32m|[m     Signed-off-by: Holloway, Kean Ho <hollowayk

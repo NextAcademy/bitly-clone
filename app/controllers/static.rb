@@ -1,3 +1,5 @@
+require 'byebug'
+
 get '/' do
 	erb :"static/index"
 end
@@ -7,20 +9,16 @@ post '/url' do
 	#create new row of data with long url
 	#AR callback will auto run shorten
 	url = Url.new(params)
-	url.save
-	redirect to("/")
-  #OR erb :"static/index" #render
+
+	if url.save
+	else
+		@flash = url.errors.messages[:long_url][0]
+	end
+	erb :"static/index" #render
+  #OR redirect to '/' (but error msg will not show) 
 end
 
-# #3a redirect to actual page
-# get '/:short_url' do
-# 	#find row of short url associated to long url
-# 	long_url = Url.find_by(short_url: params['short_url']).long_url
-# 	redirect to long_url
-# end
-
-
-#3b redirect to actual page & add counter
+#3 redirect to actual page & add counter
 get '/:short_url' do
 	#find row of short url associated to long url
 	url = Url.find_by(short_url: params['short_url'])
