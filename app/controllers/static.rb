@@ -5,7 +5,8 @@ end
 # #2 save long and short urls into database
 post '/url' do
 	#create new row of data with long url
-	#ARcallback willauto run shortern
+	#AR callback will auto run shorter=n
+
 	url = Url.new(params)
 	url.save
 	redirect to("/")
