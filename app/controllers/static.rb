@@ -6,6 +6,7 @@ end
 post '/url' do
 	#create new row of data with long url
 	#AR callback will auto run shorter=n
+
 	url = Url.new(params)
 	url.save
 	redirect to("/")
