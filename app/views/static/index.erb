@@ -1,29 +1,56 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
 
-<form action="/shorten_url" method="post">
-	Enter URL:
-	<input type="text" name="long_url">
-	<input type="submit" value="Submit">
-</form>
 
-<% if @valid_url %>
-	<p><%= @valid_url %></p>
-<% else %>
-	<p><%= @invalid_url %></p>
-<% end %>
-
-<table>
-	<tr>
-		<th>Original URL</th>
-		<th>Shortened URL</th>
-		<th>Counter</th>
-	</tr>>
+<div class="container-fluid">
+	<div class="row">
+		<h1 class="text-center">Welcome</h1>
+	</div>
+	<div class="row">
+		<p class="text-center">Enter URL you wish to change below</p>
+	</div>
+	<div class="row filler"></div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 form-container">
+			<form action="/shorten_url" method="post">
+				<input type="text" name="long_url">
+				<input class="btn btn-block" type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row filler"></div>
+	<div class="row">
+		<% if @valid_url %>
+			<p class="text-center"><%= @valid_url %></p>
+		<% else %>
+			<p class="text-center"><%= @invalid_url %></p>
+		<% end %>
+	</div>
+	<div class="row filler"></div>
+	<div class="row">
+		<div class="col-md-4">
+			<h4 class="text-center table-header">Original URL</h4>
+		</div>
+		<div class="col-md-4">
+			<h4 class="text-center table-header">Shortened URL</h4>
+		</div>
+		<div class="col-md-4">
+			<h4 class="text-center table-header">Counter</h4>
+		</div>
+	</div>
+	<div class="row filler"></div>
 	<% @data.each do |row| %>
-	<tr>
-		<td><%= row.long_url %></td>
-		<td><a href="http://localhost:9393/<%= row.short_url %>">http://localhost:9393/<%= row.short_url %></a></td>
-		<td><%= row.counter %></td>
-	</tr>
+		<div class="row">
+			<div class="col-md-4">
+				<p class="text-center table-meat"><%= row.long_url %></p>
+			</div>
+			<div class="col-md-4">
+				<a href="http://localhost:9393/<%= row.short_url %>"><p class="text-center table-meat">http://localhost:9393/<%= row.short_url %></p></a>
+			</div>
+			<div class="col-md-4">
+				<p class="text-center table meat"><%= row.counter %></p>
+			</div>
+		</div>
 	<% end %>
-</table>
+	<div class="row filler"></div>
+</div>

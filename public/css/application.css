@@ -1,0 +1,66 @@
+#header-container {
+  box-sizing: border-box;
+  background-image: url('/img/landscape-mountains-nature-clouds.jpg');
+  background-size: cover;
+}
+
+.logo, .footer-note {
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+
+.section {
+  height: 80px;
+}
+
+.nav-bar {
+  margin-top: 25px;
+  padding: 0px;
+}
+
+.nav-link {
+  display: inline;
+  padding-right: 13px;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+.login-button {
+  margin-left: 200px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.signup-button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.header-button {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+
+.filler {
+  height: 15px;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-container {
+  height: 60px;
+  background-image: url('/img/landscape-mountains-nature-clouds.jpg');
+  background-size: cover;
+}
+
+.footer-note {
+  margin-top: 20px;
+}
