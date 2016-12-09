@@ -1,17 +1,20 @@
 <h1>Bitly Clone</h1>
 <h2>THE LINK KNOWS ALL. SO CAN YOU.</h2>
-<p>let's go</p>
+<p>Measure your links with Bitly Clone.</p>
 
 <!-- created a form -->
-<form action="/url" method="POST">
-	ENTER URL:
+<form id="main", action="/url" method="POST">
+	<!-- ENTER URL: -->
 	<input type="text" name="long_url">
 	<input type="submit" value="Submit">
 </form>
 
-<p><%= @flash%></p>
+<p id="message"><%= @flash%></p>
 
-<table>
+<div id="demo"></div>
+
+<div id="table-content">
+<table id="table" align="center">
 	<% Url.all.each do |x| %>
 	<tr>
 		<td><%= x.long_url%></td>
@@ -22,5 +25,7 @@
 	</tr>
 	<% end %>
 </table>
+</div>
+
 
 

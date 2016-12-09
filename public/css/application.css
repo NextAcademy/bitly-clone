@@ -1,0 +1,67 @@
+body{
+	/*background-color: rgba(30,144,255,0.5);*/
+	background-image: url('/img/work_desk.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+}
+
+#box{
+	width:1240px;
+	height:585px;
+	padding: 20px;
+	/*background-size: cover;*/
+	background-color: rgba(32,64,79,0.8);
+	text-align: center
+}
+
+h2{
+	font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:300;
+	font-size: 350%;
+	text-align: center;
+	color: white;
+}
+
+p{
+	color: white;
+	font-size: 150%;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/*input[type="text"]{
+	border-color: white;
+	border-style: solid;
+}*/
+
+
+input[type="submit"]{
+  background-color: #E53D16;
+  color: white;
+  border-color: #E53D16;
+  border-style: solid;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    font-size: 90%;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 100%
+    /*color: red;*/
+}
+
+table, tr, td {
+   border: 2px solid grey;
+}
+
+
+tr, td{
+	text-align: left;
+	padding: 10px;
+	background-color: white;
+}
+
+tr:hover {
+	background-color: #E53D16
+}

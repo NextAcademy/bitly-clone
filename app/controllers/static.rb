@@ -11,10 +11,14 @@ post '/url' do
 	url = Url.new(params)
 
 	if url.save
+		url.to_json
 	else
-		@flash = url.errors.messages[:long_url][0]
+		status 400
+		url.errors.messages[:long_url][0]
 	end
-	erb :"static/index" #render
+	# redirect '/'
+	# erb :"static/index"
+	# erb :"static/index" #render
   #OR redirect to '/' (but error msg will not show) 
 end
 
