@@ -20,7 +20,7 @@ get '/:short_url' do
   redirect "http://" + object[0].long_url
 end
 
-get '/list_url' do
+post '/list_url' do
   data = Url.all.last(5).reverse
   data.to_json
 end

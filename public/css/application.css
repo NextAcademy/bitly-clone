@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.logo, .footer-note {
+.logo, .footer-note, .table-header {
   color: white;
   font-family: 'Pacifico', cursive;
 }
@@ -63,16 +63,23 @@ input {
   text-align: center;
 }
 
+.background {
+  background-image: url('/img/landscape-mountains-nature-clouds');
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.effects {
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px black;
+  width: 95%;
+  margin: auto;
+}
+
 .footer-container {
   height: 60px;
   background-image: url('/img/landscape-mountains-nature-clouds.jpg');
   background-size: cover;
-  clear:both;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
 }
 
 .footer-note {
