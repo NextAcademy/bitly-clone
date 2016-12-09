@@ -11,23 +11,28 @@
 	<div class="row">
 		<div class="col-md-4"></div>
 		<div class="col-md-4 form-container">
-			<form action="/shorten_url" method="post">
-				<input type="text" name="long_url">
-				<input class="btn btn-block" type="submit" value="Submit">
+			<form id="request_form" action="/shorten_url" method="post">
+				<input style="margin-bottom:5px" type="text" name="long_url">
+				<input style="border: black 2px solid; margin-bottom: 5px" class="btn btn-block" type="submit" value="Submit">
 			</form>
 		</div>
 		<div class="col-md-4"></div>
 	</div>
-	<div class="row filler"></div>
-	<div class="row">
-		<% if @valid_url %>
-			<p class="text-center"><%= @valid_url %></p>
-		<% else %>
-			<p class="text-center"><%= @invalid_url %></p>
-		<% end %>
+	<div id="pop-up-window" class="row">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<button id="history_table_button" style="border: black 2px solid" class="btn btn-block">Show History</button>
+	</div>
+	<div class="col-md-4"></div>
 	</div>
 	<div class="row filler"></div>
 	<div class="row">
+		<p id="show-me-the-money" class="text-center"></p>
+	</div>
+	<div class="row filler"></div>
+</div>
+<div id="history-table" class="container-fluid">
+	<div class="row history-table-head-location">
 		<div class="col-md-4">
 			<h4 class="text-center table-header">Original URL</h4>
 		</div>
@@ -39,18 +44,17 @@
 		</div>
 	</div>
 	<div class="row filler"></div>
-	<% @data.each do |row| %>
-		<div class="row">
+		<div id="history-table-row-location" class="row">
 			<div class="col-md-4">
-				<p class="text-center table-meat"><%= row.long_url %></p>
+				<p class="text-center table-meat"></p>
 			</div>
 			<div class="col-md-4">
-				<a href="http://localhost:9393/<%= row.short_url %>"><p class="text-center table-meat">http://localhost:9393/<%= row.short_url %></p></a>
+				<a href="#"><p class="text-center table-meat"></p></a>
 			</div>
 			<div class="col-md-4">
-				<p class="text-center table meat"><%= row.counter %></p>
+				<p class="text-center table meat"></p>
 			</div>
 		</div>
-	<% end %>
 	<div class="row filler"></div>
+</div>
 </div>
