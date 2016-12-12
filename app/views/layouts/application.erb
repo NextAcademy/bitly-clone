@@ -1,8 +1,58 @@
 <html>
 	<head>
-		<title>Sinatra Framework</title>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/js/application.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/application.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<title>BitCloneLy</title>
 	</head>
 	<body>
+		<header>
+  <div id="header-container" class="container-fluid">
+    <div class="row">
+         <div class="section col-md-4">
+           <a href="/"><h1 class="logo">BitCloneLy</h1></a>
+         </div>
+         <div class="section col-md-4">
+           <ul class="nav-bar">
+             <a href="#"><li class="nav-link">Tour</li></a>
+             <a href="#"><li class="nav-link">Enterprise</li></a>
+             <a href="#"><li class="nav-link">Resources</li></a>
+             <a href="https://github.com/Hinsei"><li class="nav-link">Blog</li></a>
+             <a href="https://github.com/Hinsei"><li class="nav-link">About</li></a>
+           </ul>
+         </div>
+         <div class="section col-md-4">
+           <div class="header_button_container"
+             <a href="#">
+               <div class="login-button header-button">
+                 <h4>Login</h4>
+               </div>
+             </a>
+             <a href="#">
+               <div class="signup-button header-button">
+               	<h4>Sign Up</h4>
+     			     </div>
+             </a>
+           </div>
+         </div>
+     </div>
+  </div>
+</header>
+	<article>
 		<%= yield %>
+	</article>
+	<!-- <footer class="footer navbar-fixed-bottom">
+		<div class="container-fluid">
+			<div class="footer-container row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<h4 class="footer-note text-center">Made by Hinsei</h4>
+				</div>
+				<div class="col-md-4"><div>
+			</div>
+		</div>
+	</footer> -->
 	</body>
 </html>

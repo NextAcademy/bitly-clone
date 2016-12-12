@@ -1,2 +1,35 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<h1 class="text-center">Welcome</h1>
+	</div>
+	<div class="row">
+		<p class="text-center">Enter URL you wish to change below</p>
+	</div>
+	<div class="row filler"></div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 form-container">
+			<form id="request_form" action="/shorten_url" method="post">
+				<input style="margin-bottom:5px" type="text" name="long_url">
+				<input style="border: black 2px solid; margin-bottom: 5px" class="btn btn-block" type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+	<div id="pop-up-window" class="row">
+		<div class="col-md-4"></div>
+		<div id="button-column" class="col-md-4">
+			<button id="history_table_button" style="border: black 2px solid" class="btn btn-block">Show History</button>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row filler"></div>
+	<div class="row">
+		<p id="show-me-the-money" class="text-center"></p>
+	</div>
+	<div class="row filler"></div>
+</div>
+<div id="history-table" class="container-fluid">
+</div>
