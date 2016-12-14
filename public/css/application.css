@@ -1,0 +1,89 @@
+body{
+	/*background-color: rgba(30,144,255,0.5);*/
+	background-image: url('/img/work_desk.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+}
+
+#box{
+	width:1240px;
+	height:585px;
+	padding: 20px;
+	/*background-size: cover;*/
+	background-color: rgba(32,64,79,0.8);
+	text-align: center
+}
+
+h1{
+	color: white;
+	margin-top: 15px;
+}
+
+h2{
+	font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:300;
+	font-size: 320%;
+	text-align: center;
+	color: white;
+	margin-bottom: 5px;
+}
+
+p{
+	color: white;
+	font-size: 150%;
+	font-family: Helvetica,Arial,sans-serif;
+	margin-top: 5px;
+}
+
+input[type="text"]{
+	width: 56%;
+	padding: 10px 17px;
+	border-color: #FFFFFF;
+  border-style: solid;
+}
+
+a{
+	font-size: 95%;
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: 300%;
+  color: #E53D16;
+}
+
+a:visited {
+    color: #1A2842;
+}
+
+input[type="submit"]{
+  background-color: #E53D16;
+  color: white;
+  border-color: #E53D16;
+  border-style: solid;
+  width: 10%;
+	padding: 10px 17px;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 70%;
+    font-size: 95%;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 300%;
+    color: #696969;
+}
+
+table, tr, td {
+   border: 2px solid lightgray;
+}
+
+
+tr, td{
+	text-align: left;
+	padding: 7px;
+	background-color: rgba(255,255,255,0.7);
+	word-wrap: break-word;
+}
+
+tr:hover {
+	background-color: white;
+}
