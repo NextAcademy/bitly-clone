@@ -22,6 +22,7 @@ $(document).ready(function(){
 			},
 			error: function(output){
 				$("#message").html(output.responseText)
+				// do some effect
 			}
 		})
 	})

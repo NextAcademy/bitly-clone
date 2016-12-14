@@ -15,53 +15,75 @@ body{
 	text-align: center
 }
 
+h1{
+	color: white;
+	margin-top: 15px;
+}
+
 h2{
 	font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:300;
-	font-size: 350%;
+	font-size: 320%;
 	text-align: center;
 	color: white;
+	margin-bottom: 5px;
 }
 
 p{
 	color: white;
 	font-size: 150%;
 	font-family: Helvetica,Arial,sans-serif;
+	margin-top: 5px;
 }
 
-/*input[type="text"]{
-	border-color: white;
-	border-style: solid;
-}*/
+input[type="text"]{
+	width: 56%;
+	padding: 10px 17px;
+	border-color: #FFFFFF;
+  border-style: solid;
+}
 
+a{
+	font-size: 95%;
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: 300%;
+  color: #E53D16;
+}
+
+a:visited {
+    color: #1A2842;
+}
 
 input[type="submit"]{
   background-color: #E53D16;
   color: white;
   border-color: #E53D16;
   border-style: solid;
+  width: 10%;
+	padding: 10px 17px;
 }
 
-table {
+#table {
     border-collapse: collapse;
     width: 70%;
-    font-size: 90%;
+    font-size: 95%;
     font-family: Helvetica,Arial,sans-serif;
-    font-weight: 100%
-    /*color: red;*/
+    font-weight: 300%;
+    color: #696969;
 }
 
 table, tr, td {
-   border: 2px solid grey;
+   border: 2px solid lightgray;
 }
 
 
 tr, td{
 	text-align: left;
-	padding: 10px;
-	background-color: white;
+	padding: 7px;
+	background-color: rgba(255,255,255,0.7);
+	word-wrap: break-word;
 }
 
 tr:hover {
-	background-color: #E53D16
+	background-color: white;
 }
