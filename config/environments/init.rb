@@ -20,6 +20,12 @@ require "sinatra/reloader" if development?
 	# embedded ruby
 require 'erb'
 require 'uri'
+
+require'byebug'
+
+require "activerecord-import/base"
+ActiveRecord::Import.require_adapter('pg')
+
 ######################################################################
 
 

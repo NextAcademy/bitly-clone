@@ -1,11 +1,16 @@
 require 'rake'
 require 'rspec/core/rake_task'
+require 'securerandom'
 
 # Include environment settings
 require ::File.expand_path('../config/environments/init', __FILE__)
 
 # Require all ActiveSupport's class and extensions
 require 'active_support/core_ext'
+
+
+
+
 
 namespace :generate do
 	desc "Create empty model spec in spec, e.g., rake generate:spec NAME=test_name"
@@ -126,6 +131,19 @@ namespace :db do
 	desc "Returns the current schema version number"
 	task :version do
 		puts "Current version: #{ActiveRecord::Migrator.current_version}"
+	end
+
+	task :import_urls do
+  	require 'csv'
+  		random_short = SecureRandom.hex(3)
+	  	Url.transaction do
+	    urls = CSV.read("test.csv")
+	    good_urls =  urls.map {|url| url.compact}
+	    columns = [:longUrl, :shortUrl]
+	    good_urls.map {|url| url << random_short }
+	    byebug
+	    Url.import columns, good_urls, validate: false
+	  	end
 	end
 end
 

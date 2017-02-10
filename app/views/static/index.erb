@@ -1,2 +1,61 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="/">URLshor.ty</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li> 
+        <li><a href="#">Page 3</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<header class="subheader">
+	<div class="titrage">
+		<h1>THE LINK KNOWS ALL. SO CAN YOU LINK</h1>
+		<p>Measure your links with Bitly, the world's leading link management platform.</p>
+	</div>
+	<form id="form" class="barre cf" action="/urls" method="POST">
+	    <input id="search_bar" type="text" name="long_url" placeholder="Put your long url here..." required>
+	    <button type="submit" value="Submit">Submit</button>
+
+	</form>
+
+	<div id="message">
+
+	</div>
+</header>
+
+<div class="recent_list"  >
+<p>Here are your recently shortened URLs!</p>
+<table  id="show_database">
+	<thead>
+    <th class="big_box"> LONG URL </th>
+    <th class="small_box"> SHORT URL </th>
+    <th class="count_click small_box"> CLICK </th>
+    </thead>
+    <tbody>
+        <% @result.each do |n| %>
+        <tr>
+            <td class="big_box"> <%= n.longUrl %></td>
+            <td class="small_box"><a href="http://localhost:9393/<%= n.shortUrl%>"><%= n.shortUrl%></a></td>
+            <td class="count_click small_box"><%= n.countClick %></td>
+        </tr>
+
+        <% end %>
+    </tbody>
+</table>
+</div>
