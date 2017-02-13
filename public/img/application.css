@@ -1,18 +1,8 @@
-/*.container img {
-	float: left;
-  width: 100px;
-  height: 100px;
-  background: #555;
-  overflow: auto
-}*/
-
-
 h1 {
 	text-align: center;
-	color: #fffa31;
+	color: #fffa31;;
 	font-size: 85px;
-	margin-left: 20;
-	margin-top: 20;
+	margin-left:15;
 	clear: both;
 }
 
@@ -23,11 +13,10 @@ h1 {
 }
 
 .overme {
-   width: 265px;
-   overflow:hidden; 
-   white-space:nowrap; 
-   text-overflow: ellipsis;
-   margin-left: 10;
+    width: 450px;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
 }
 
 /*.colour {
@@ -54,40 +43,37 @@ body {
 
 input[type="url"] {
   display: block;
-  box-sizing: border-box;
-  color: #333;
   margin: 3;
   width: 60%;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 33px;
   text-align: left;
 }
 
 .style-2 input[type="text"] {
-  padding: 14px;
-  width: 400;
-  /*border: solid 5px;*/
+  padding: 10px;
+  border: solid 5px #	;
 }
 .style-2 input[type="text"]:focus, .style-2 input[type="text"].focus {
   border: solid 5px #969696;
 }
 
-#btn-default,
-#btn-default:hover,
-#btn-default:focus {
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: 40px solid #fff;
+  border: 1px solid #fff;
 }
+
 
 /*.btn {
 	color: #333;
   text-shadow: none;  Prevent inheritance from `body` 
   background-color: #fff;
   border: 1px solid #fff;
-  cursor: pointer;
-  border-radius: 4px;*/
+  cursor: pointer;*/
 
 	/*border: none;
 	font-family: inherit;
@@ -131,17 +117,10 @@ a:active {
     color: #333;
 }
 
-#error {
-	text-align: center;
-	color: #ff5120;
-	font-size: 15px;
-	margin-bottom: 20px;
-}
-
 table { 
 color: #333;
 font-family: Helvetica, Arial, sans-serif;
-width: 100%; 
+width: 95%; 
 float:none;
 display: inline;
 border-collapse: 
@@ -151,25 +130,23 @@ background: transparent;
 }
 
 td, th { 
-border: 5px solid transparent; 
+border: 1px solid transparent; 
 height: 30px;
 margin: 8px;
 font-size: 16px; 
 }
 
 .th2 {
-background: #0e1013;
+background: #000000;
 opacity:0.7;
 color: white;
  /* Darken header a bit */
 font-weight: bold;
-text-align: left;
-padding: 10px;
 }
 
 td {
 background: #FAFAFA;
-text-align: left;
+text-align: center;
 }
 
 .required_notification {
