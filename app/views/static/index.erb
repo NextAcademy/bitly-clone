@@ -1,2 +1,48 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<div class="container">
+	<div class="form">
+		<form action="/urls" method="POST" id="url-form"> 
+		    <div class="row justify-content-center">
+			    <div class="col-6">
+			    		<input type="text" name="long_url" class="form-control" placeholder="Enter URL here" id="url-input">
+			    </div>
+		    <input type="submit" value="shortn" class="btn btn-color">
+		    </div>
+		</form>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-5" id="error-new-entry">
+				<% if @error_messages %>
+					<% @error_messages.messages[:link].each do |msg|%>
+					<p class="error-msg">
+					<%= msg %>
+					</p>
+					<%end%>
+				<% end %>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="url-list row justify-content-center">
+		<% unless Url.all.empty? %>
+			<table align="center">
+				<col width="260">
+				<col width="260">
+				<col width="100">
+				<tr>
+					<th height="30">URL</th>
+					<th height="30">Lnkshortnr URL</th>
+					<th height="30">Click Count</th>
+				</tr>
+				<% Url.all.order(click_count: :desc, created_at: :desc).each do |result| %>
+				<tr>
+					<td><%=	result.link %></td>
+					<td><a href="<%= request.base_url + '/' + result.serial_code %>"><%= request.base_url + '/' + result.serial_code %></a></td>
+					<td><%=	result.click_count %></td>
+				</tr>
+				<% end %>
+			</table>
+		<% end %>
+	</div>
+</div>
