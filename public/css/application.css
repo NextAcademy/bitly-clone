@@ -1,0 +1,55 @@
+#added{
+text-align: center;
+
+}
+
+form{text-align: center;
+}
+div{align: auto;
+
+}
+html{font-family: Avenir
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+p {
+  text-align: center;
+  color: textcolor;
+}
+body{
+  background-color: #AFFFDC;
+}
+table{
+  margin: auto;
+  background-image:
+  border-collapse: collapse;
+  width: 70%;
+
+}
+th {
+    padding: 8px;
+    text-align: left;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #B7C3FF;
+    color: #B7C3FF;
+}
+td {
+    padding: 8px;
+    text-align: left;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid #B7C3FF;
+    color: grey;
+}
+
+
+.display {
+  display: block;
+  margin-left:auto;
+    margin-right:auto;
+}
