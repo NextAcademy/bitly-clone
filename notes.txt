@@ -1,0 +1,5 @@
+incorporate bootstrap cdn link so that i can see my shortened link in a nicer table
+
+- validations (url, means i cant enter any invalid, i cant enter repetitive link
+-if the entry is saved, then good. if the entry is not valid, how should i deal with it? Should i enter an error message manually? or should i just borrow the validation error message from active record
+Click count for the link that we shortened
