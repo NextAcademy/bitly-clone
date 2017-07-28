@@ -1,0 +1,23 @@
+incorporate bootstrap cdn link so that i can see my shortened link in a nicer table
+
+1- validations (url, means i cant enter any invalid, i cant enter repetitive link
+-if the entry is saved, then good. if the entry is not valid, how should i deal with it? Should i enter an error message manually? or should i just borrow the validation error message from active record
+Click count for the link that we shortened
+
+*****************************************
+
+to commit and push changes to Heroku
+1- make my changes to my local files
+2- test it on my 127.0.0.1:9393 or see link below: (http://127.0.0.1:9393) by typing into my terminal :
+    - $ rake server
+3- when its successful or i approve changes: do below steps:
+
+$ git add .
+$ git commit
+- (enter commit message e.g. "i changed background color")
+- esc
+- :wq!
+
+$ git push (origin/heroku) master
+
+*****************************************

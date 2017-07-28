@@ -1,0 +1,54 @@
+body{
+  background-color: yellow;
+}
+
+h1 {
+  color: red;
+  font-size: 130px;
+  font-style: italic;
+  font-family: Chalkduster;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 90px;
+}
+
+form {
+  margin-top: 1.75cm;
+  margin-left: 7cm;
+}
+
+input {
+  border: 9px solid navy;
+  font-size: 55px;
+
+}
+tr {
+  color: red;
+
+}
+
+th {
+    color: red;
+    column-fill: balance;
+    background-color: blue;
+    border-style: dotted;
+    /*border-spacing: 10px;*/
+    color: white;
+}
+
+table {
+    color: red;
+    background-color: DeepSkyBlue;
+    border: 20px solid red;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    /*border-style: groove;*/
+
+}
+
+#shorten-btn {
+  -webkit-appearance: button;
+  font-size: 55px;
+  height: inherit;
+  color: red;
+}

@@ -1,2 +1,39 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<h1>Bitly Clone</h1>
+  <!-- params[]"long_url"]-->
+  <!-- when there is a % sign on html tag, it means it is an embnedded ruby file; simply means you can encode inside html file  -->
+<p><%= @errors if @errors %></p>
+
+
+<form id= 'create_url' action="/shorten" method="post">
+  <input id="text_input" type="text" name="long_urls" placeholder="Insert your url here">
+  <input id='shorten-btn' type="Submit" value="Shorten!">
+</form>
+
+
+<table class="table">
+  <tr>
+    <th>Long URL</th>
+    <th>Short URL</th>
+    <th>Click Count</th>
+  </tr>
+  <% @urls.each do |url| %>
+    <tr>
+      <td>
+        <a href="<%= url.long_urls %>">
+          <%= url.long_urls %>
+        </a>
+      </td>
+      <td>
+        <a href="/<%= url.short_urls %>">
+          <%= url.short_urls %>
+        </a>
+        </td>
+      <td><%= url.click_count %></td>
+      <td>
+        <form action="/<%=url.id%>/vote" method="post">
+          <input type="submit" value="Vote"></td>
+        </form>
+      </td>
+    </tr>
+  <% end %>
+</table>
