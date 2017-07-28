@@ -4,7 +4,7 @@ incorporate bootstrap cdn link so that i can see my shortened link in a nicer ta
 -if the entry is saved, then good. if the entry is not valid, how should i deal with it? Should i enter an error message manually? or should i just borrow the validation error message from active record
 Click count for the link that we shortened
 
-
+*****************************************
 
 to commit and push changes to Heroku
 1- make my changes to my local files
@@ -18,4 +18,6 @@ $ git commit
 - esc
 - :wq!
 
-$ git push heroku master
+$ git push (origin/heroku) master
+
+*****************************************
