@@ -40,5 +40,10 @@ get '/:shortshort' do
   @url.click_count +=1
   @url.save
   rediirect to "#{@url.long_urls}"
+end
 
+post "/test" do
+  @url = Url.new(long_urls: params[:long_urls], short_urls: SecureRandom.hex(4))
+  @url.save
+  @url.to_json
 end

@@ -4,8 +4,8 @@
 <p><%= @errors if @errors %></p>
 
 
-<form action="/shorten" method="post">
-  <input type="text" name="long_urls" placeholder="Insert your url here">
+<form id= 'create_url' action="/shorten" method="post">
+  <input id="text_input" type="text" name="long_urls" placeholder="Insert your url here">
   <input id='shorten-btn' type="Submit" value="Shorten!">
 </form>
 
@@ -19,7 +19,7 @@
   <% @urls.each do |url| %>
     <tr>
       <td>
-        <a href="<%= url.long_urls %>"
+        <a href="<%= url.long_urls %>">
           <%= url.long_urls %>
         </a>
       </td>

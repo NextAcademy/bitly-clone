@@ -1,4 +1,4 @@
-$(document).ready(funciton(){
+$(document).ready(function(){
   $("#create_url").on("submit", function(event){
     event.preventDefault()
     form_inputs = $(this).serialize()
@@ -8,11 +8,12 @@ $(document).ready(funciton(){
       data: form_inputs,
       dataType: "json",
       success: function(data){
+        debugger
         $("tbody").append(
-          "<tr><td><a href=" + data.long_url + ">" +
-          data.long_url + "</a>" +
+          "<tr><td><a href=" + data.long_urls + ">" +
+          data.long_urls + "</a>" +
           "</td><td>" +
-          data.short_url +
+          data.short_urls +
           "</td><td>0</td><td></td></tr>"
         )
       }
