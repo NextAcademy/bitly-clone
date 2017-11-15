@@ -39,16 +39,13 @@
 				<input type="submit" name="Submit" class="button">
 			</form>
 			<!-- <#% byebug %>  -->
-			<div>
-				<%if @errors%>
-				<p id="red">Error:<%= @errors%></p>
-				<%end%>
+			<div id="errors">
+				<%#<!-- if @errors%>
+				<!-- <p id="red">Error:<%= @errors%></p> -->
+				<%# -->end%>
 			</div>
 		</div>
-
 	</div>
-
-
 
 	<!-- table here  -->
 	<table id="black2" class >
@@ -68,13 +65,6 @@
 		<%end%>
 	</table>
 
-	<!-- <p> <%puts "Original URL".ljust(15) + "Shortened URL"%> </p> -->
-	<!-- p><% Url.all.each do |x| %>
-			<%puts "#{x.ori_url}".ljust(15) + "#{x.short_url}"%>
-		<%end%></p> -->
-
-	<!-- Url.all.each do  -->
-	<!-- <p>Your shorten url is: <%#= url.short_url %></p> -->
 </body>
 </html>
 

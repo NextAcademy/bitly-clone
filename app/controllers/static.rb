@@ -5,17 +5,18 @@ get '/' do
   erb :"static/index"
 end
 
-post '/' do
+post '/urls' do
 	
 	i = Url.new(ori_url:params[:long_url], short_url: Url.shorten)
 
 	if i.save
 		i.to_json
 		# redirect '/'
+		{success: true, message: i}.to_json
 	else
 		@errors = i.errors.messages
-		# @all_url = Url.all
-		erb :'static/index'
+		{success: false, message: (i.errors.messages)}.to_json
+		# erb :'static/index'
 	end
 
 
