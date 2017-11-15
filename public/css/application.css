@@ -2,16 +2,23 @@ body {
     background-color: black ;
 }
 
+#red{
+    background-color: red;
+    width: 30em;
+    margin: auto;
+    color: lime;
+}
+
 .center {
     text-align: center;
 }
 
 body .green {
-	color: green;
+	color: lime;
 }
 
 table {
-	color: green;
+	color: lime;
 	margin: auto;
 	margin-top: 2em;
 	width: 80%;
@@ -22,7 +29,7 @@ table {
 }
 
 th, td {
-    border: 1px solid green;
+    border: 1px solid lime;
     border-collapse: collapse;
     padding: .2em;
 }
@@ -33,8 +40,8 @@ th, td {
 
 .button {
     background-color: black;
-    color: green;
-    border: 2px solid green;
+    color: lime;
+    border: 2px solid lime;
 }
 
 .underline {
@@ -56,4 +63,4 @@ th, td {
     background-color: black ;
 }
 
-/*.test:hover { background-color: green; }*/
+/*.test:hover { background-color: lime; }*/

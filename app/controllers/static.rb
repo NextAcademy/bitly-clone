@@ -5,12 +5,24 @@ get '/' do
   erb :"static/index"
 end
 
-post '/urls' do
+post '/' do
 	
-	Url.create(ori_url:params[:long_url], short_url: Url.shorten)
+	i = Url.new(ori_url:params[:long_url], short_url: Url.shorten)
+
+	if i.save
+		i.to_json
+		# redirect '/'
+	else
+		@errors = i.errors.messages
+		# @all_url = Url.all
+		erb :'static/index'
+	end
+
+
+	# Url.create(ori_url:params[:long_url], short_url: Url.shorten)
 	# byebug
 	# @url = Url.all
-	redirect '/'
+	# redirect '/'
 
 end 
 
