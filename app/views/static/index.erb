@@ -51,7 +51,7 @@
 		<% Url.all.each do |x| %>
 		<tr>
 			<td class="padleft"><%= x.ori_url%></td>
-			<td class="center underline"><a class="green" href= <%= x.short_url%> target="_blank"> <%= x.short_url%></a></td> 
+			<td class="center underline"><a class="green" href= <%= x.short_url%> target="_blank"> http://bitchly.<%= x.short_url%></a></td> 
 			<td class="center"><%= x.click_count%></td>
 		</tr>
 		<%end%>
