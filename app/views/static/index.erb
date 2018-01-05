@@ -15,7 +15,7 @@
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid green">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="/">Bitchly</a>
+	      <a class="navbar-brand" href="/">Bitly</a>
 	    </div>
 	    <!-- <ul class="nav navbar-nav">
 	      <li class="active"><a href="#">Home</a></li>
@@ -30,7 +30,7 @@
 	</nav>
 	<div class="container-fluid center bubs">
 		<div id="black" class="center">
-			<h1 class="green">Bitchly</h1>
+			<h1 class="green">Bitly</h1>
 			<!-- <p class="green">See Me in views/static/index.html.erb</p> -->
 			<p class="green">Let's shorten It</p>
 			<form id="submitting" class="green" action="/urls" method="post">
@@ -59,7 +59,7 @@
 		<tr>
 			<td class="center"><%= x.id%></td>
 			<td class="padleft"><%= x.ori_url%></td>
-			<td class="center underline"><a class="green" href= <%= x.short_url%> target="_blank"> http://bitchly.<%= x.short_url%></a></td> 
+			<td class="center underline"><a class="green" href= <%= x.short_url%> target="_blank"> http://bitly.<%= x.short_url%></a></td> 
 			<td class="center"><%= x.click_count%></td>
 		</tr>
 		<%end%>
