@@ -24,12 +24,12 @@ gem 'rake'
 # Adding rspec for running unit testing
 gem 'rspec'
 
-# Adding byebug for debugging
-gem 'byebug'
 
 group :development, :test do
 	# Adding shotgun for local web hosting
 	gem 'shotgun'
+        # Adding byebug for debugging
+        gem 'byebug'
 end
 
 group :production do
