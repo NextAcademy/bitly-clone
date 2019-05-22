@@ -1,0 +1,66 @@
+body {
+    background-color: black ;
+}
+
+#red{
+    background-color: red;
+    width: 30em;
+    margin: auto;
+    color: lime;
+}
+
+.center {
+    text-align: center;
+}
+
+body .green {
+	color: lime;
+}
+
+table {
+	color: lime;
+	margin: auto;
+	margin-top: 2em;
+	width: 80%;
+}
+
+.monospace {
+    font-family: Courier New, Arial, Times New Roman;
+}
+
+th, td {
+    border: 1px solid lime;
+    border-collapse: collapse;
+    padding: .2em;
+}
+
+.padleft {
+	padding-left: .8em
+}
+
+.button {
+    background-color: black;
+    color: lime;
+    border: 2px solid lime;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bubs {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnE_orKu8yQsBeyYQ1pNVxEjL3qCVLQjetd3u3l9xrKfxVcC_Ug");
+    background-repeat: repeat;
+}
+
+#black {
+    background-color: black ;
+    width: 30em;
+    margin: auto;
+}
+
+#black2 {
+    background-color: black ;
+}
+
+/*.test:hover { background-color: lime; }*/
